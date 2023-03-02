@@ -1,0 +1,19 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "title": "Missão",
+        "description": "Construir empreendimentos inovadores que superem as expectativas dos clientes. Valorizar nossos colaboradores."
+      },
+      {
+        "id": 2,
+        "title": "Visão",
+        "description": "Ser reconhecida como maior e melhor indústria de construção civil do bairro Morretes, como empresa referência em motivar os colaboradores e a realizar sonhos de clientes."
+      },
+      {
+        "id": 3,
+        "title": "Valores",
+        "description": "Respeito um fator mútuo entre os colaboradores e empregadores. Responsabilidade por cada tarefa desempenhada, tanto da parte estratégica, tática e operacional."
+      }
+    ]
+}

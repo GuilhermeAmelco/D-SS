@@ -1,0 +1,57 @@
+.boxBuild {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    color: rgba(29, 146, 72, 1);
+    align-items: center;
+}
+
+.imageLogo {
+
+    grid-column: span 3;
+    margin: 24px;
+}
+
+.image {
+
+    grid-column: span 3;
+}
+
+.buildText {
+
+    grid-column: span 3;
+    justify-self: flex-start;
+    margin: 6px 8px;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.subtitle {
+
+    justify-self: flex-start;
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.subtitle, .link {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+
+    justify-self: flex-end;
+    grid-column: span 2;
+    margin-right: 8px;
+}
+
+.link p {
+
+    display: inline-block;
+    margin-right: 18px;
+    color: rgba(29, 146, 72, 1);
+    text-decoration: underline;
+    font-size: 14px;
+}

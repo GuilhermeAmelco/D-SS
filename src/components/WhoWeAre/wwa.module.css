@@ -1,0 +1,63 @@
+.wwa {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(242, 242, 242, 1);
+    padding: 107px;
+    font-size: 24px;
+    color: var(--green);
+    font-weight: 700;
+}
+
+.box_wwa {
+
+    position: relative;
+    margin: 24px;
+}
+
+.boxMarketing {
+
+    position: absolute;
+    background:#F2F2F2;
+    height: 101px;
+    width: 403px;
+    padding: 34px 26px;
+    top: 65%;
+    left: calc(25% + 25px);
+    border-radius: 3px;
+}
+
+.boxMarketing p {
+
+    display: inline;
+    font-weight: normal;
+}
+
+.iconArrow {
+
+    position: absolute;
+    right: 5px;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    background-color: var(--orange);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.iconArrow:hover {
+    
+    background-color: rgb(220, 123, 5);
+}
+
+.details {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 24px;
+    height: 600px;
+}

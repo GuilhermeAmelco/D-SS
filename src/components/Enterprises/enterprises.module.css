@@ -1,0 +1,30 @@
+.boxEnterprises {
+
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    background-image: url(/public/assets/image/backEnterprises.png);
+    background-size: cover;
+}
+
+.boxEnterprises h1 {
+
+    font-family: 'Playfair Display', sans-serif;
+    justify-self: center;
+    font-size: 48px;
+    font-weight: 200;
+    margin: 130px 12px 130px 12px;
+    font-style: italic;
+}
+
+.btn {
+
+    justify-self: center;
+}
+
+.boxBuildsEnterprises {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
