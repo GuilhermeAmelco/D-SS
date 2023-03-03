@@ -1,13 +1,21 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const AboutUs = function() {
+interface Props {
 
-    const [data, setData] = useState([]);
+    title: string,
+    description: string
+}
+const AboutUs = function () {
+
+    const [data, setData] = useState<Props[]>([]);
     const url = 'http://localhot:3000/';
 
-    async function loadDados {
-        await axios.get(url+'items').then(response => setData(response.data))
+    async function loadDados() {
+        await axios.get(url + 'db.json').then(response => {
+            console.log(response);
+            setData(response.data)
+        })
     }
 
     useEffect(() => {
@@ -15,21 +23,18 @@ const AboutUs = function() {
         loadDados()
     }, [])
     return (
-        <>
             <ul>
-                {data.map((data) => {
+                {data.map((data, index) => {
 
                     return (
-                        <>
-                            <li>
+                            <li key={index}>
+
                                 <h1>{data.title}</h1>
                                 <p>{data.description}</p>
                             </li>
-                        </>
                     )
                 })}
             </ul>
-        </>
     )
 }
 

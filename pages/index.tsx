@@ -1,3 +1,4 @@
+import AboutUs from "@/src/components/AboutUs";
 import Enterprises from "@/src/components/Enterprises/Enterprises";
 import Footer from "@/src/components/Footer";
 import General from "@/src/components/General";
@@ -13,6 +14,7 @@ const Home = function () {
       <General />
       <Enterprises />
       <WhoWeAre />
+      <AboutUs />
       <Footer />
 
       <Whatsapp />

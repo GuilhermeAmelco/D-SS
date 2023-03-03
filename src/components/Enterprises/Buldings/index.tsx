@@ -18,8 +18,8 @@ const Buldings = function({buldings}: Props){
 
     return (
         <>
-            {buldings.map(build => 
-                <div className={styles.boxBuild}>
+            {buldings.map((build, index) => 
+                <div key={index} className={styles.boxBuild}>
                     <Image className={styles.imageLogo} src={build.imageLogo} alt="imagem Logo da D&SS" width={build.length} height={build.height}/>
                     <Image className={styles.image} src={build.image} alt="imagem de um prediozão daora" width={390} height={512} />
                     <h3 className={styles.buildText}>{build.text}</h3>
