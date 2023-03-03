@@ -2,14 +2,13 @@ interface Props {
 
     length: number,
     height: number,
-    margin?: number,
     text: String
 }
 
-const Btn = function({text, length, height, margin}: Props) {
+const Btn = function({text, length, height}: Props) {
 
     return (
-        <button style={{width: length, height: height, margin: margin}}>{text}</button>
+        <button style={{width: length, height: height}}>{text}</button>
     )
 }
 

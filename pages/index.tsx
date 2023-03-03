@@ -1,4 +1,4 @@
-import AboutUs from "@/src/components/AboutUs";
+import About from "@/src/components/About";
 import Enterprises from "@/src/components/Enterprises/Enterprises";
 import Footer from "@/src/components/Footer";
 import General from "@/src/components/General";
@@ -14,7 +14,7 @@ const Home = function () {
       <General />
       <Enterprises />
       <WhoWeAre />
-      <AboutUs />
+      <About />
       <Footer />
 
       <Whatsapp />

@@ -43,7 +43,7 @@ const Enterprises = function() {
             </div>
             
             <div className={styles.btn}>
-                <Btn margin={56} text="Conhecer empreendimentos entregues" length={500} height={40} />
+                <Btn text="Conhecer empreendimentos entregues" length={500} height={40} />
             </div>
         </div>
     )

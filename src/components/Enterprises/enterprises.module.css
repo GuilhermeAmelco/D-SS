@@ -4,6 +4,7 @@
     grid-template-rows: repeat(3, auto);
     background-image: url(/public/assets/image/backEnterprises.png);
     background-size: cover;
+    padding: 8px;
 }
 
 .boxEnterprises h1 {
@@ -12,7 +13,8 @@
     justify-self: center;
     font-size: 48px;
     font-weight: 200;
-    margin: 130px 12px 130px 12px;
+    padding: 2rem 0;
+    margin: 0 auto;
     font-style: italic;
 }
 
