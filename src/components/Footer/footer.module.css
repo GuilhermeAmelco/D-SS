@@ -5,12 +5,18 @@
     word-break: break-all;
     align-items: center;
     justify-content: space-evenly;
-    height: 88px;
+    min-height: 88px;
     font-family: 'Fredoka', sans-serif;
     background: var(--orange);
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 12px;
+    text-align: center;
+}
+
+.footer .p {
+
+    font-weight: 300;
 }
 
 .credits {

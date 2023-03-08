@@ -10,7 +10,7 @@ const General = function() {
             <Nav />
             <main className={styles.mainContent}>
                 <h3>Apenas 50 <br></br> metros da <strong>praia</strong></h3>
-                <Btn text="Saiba mais" length={122} height={54}/>
+                <Btn text="Saiba mais"/>
             </main>
         </section>
     )

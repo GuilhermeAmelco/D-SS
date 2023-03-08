@@ -3,6 +3,7 @@ import styles from './about.module.css'
 
 const About = function() {
 
+
     return(
 
         <section className={styles.boxAbout}>

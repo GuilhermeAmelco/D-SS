@@ -1,14 +1,11 @@
-interface Props {
-
-    length: number,
-    height: number,
+interface Props {    
     text: String
 }
 
-const Btn = function({text, length, height}: Props) {
+const Btn = function({text}: Props) {
 
     return (
-        <button style={{width: length, height: height}}>{text}</button>
+        <button >{text}</button>
     )
 }
 

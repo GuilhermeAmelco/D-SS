@@ -5,8 +5,8 @@
     align-items: center;
     flex-wrap: wrap;
     background: rgba(242, 242, 242, 1);
-    padding: 107px;
-    font-size: 24px;
+    padding: 107px 0;
+    font-size: 1.5rem;
     color: var(--green);
     font-weight: 700;
 }
@@ -66,5 +66,29 @@
     justify-content: space-between;
     text-align: center;
     margin: 24px;
-    height: 600px;
+    min-height: 600px;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 320px) {
+
+    .boxMarketing{
+
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxMarketing p {
+
+        display: block;
+        font-weight: normal;
+    }
+
+    .iconArrow {
+
+        right: auto;
+        bottom: 20px;
+    }
+
 }

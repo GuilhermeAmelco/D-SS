@@ -1,14 +1,23 @@
-@media screen and (min-width: 620px) {
+@media screen and (max-width: 425px) {
     
+    .nav {
+        margin-bottom: 56px;
+    }
     .navList {
 
-        display: grid;
-        grid-template-rows: repeat(5, auto);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
         text-align: center;
+    }
+    .logo {
+
+        order: -1;
+        transform: translateX(10px);
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 425px) and (max-width: 829px) {
 
     .navList {
 
@@ -26,7 +35,8 @@
         margin: 8px;
     }
 }
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 830px) {
         
     .nav {
 
@@ -52,9 +62,15 @@
 
 }
 
+.navList {
+
+    margin: 8px;
+    word-wrap: break-word;
+}
+
 .nav {
 
-    font-size: 18px;
+    font-size: 1.2rem;
     height: 80px;
 }
 

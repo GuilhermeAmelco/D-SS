@@ -33,7 +33,7 @@ const Enterprises = function() {
         height: 161    
     }]
     return (
-        <div className={styles.boxEnterprises}>
+        <section className={styles.boxEnterprises}>
 
             <h1>Empreendimentos</h1>
             
@@ -43,9 +43,9 @@ const Enterprises = function() {
             </div>
             
             <div className={styles.btn}>
-                <Btn text="Conhecer empreendimentos entregues" length={500} height={40} />
+                <Btn text="Conhecer empreendimentos entregues"/>
             </div>
-        </div>
+        </section>
     )
 } 
 
