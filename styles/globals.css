@@ -45,24 +45,12 @@ button {
     padding: 12px;
     margin: 24px 0;
     width: auto;
+
+
 }
 
 button:hover {
 
     background: rgb(25, 123, 61);
     color: #f1f0f0;
-}
-
-.whatsapp {
-
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    transition: 200ms;
-}
-
-.whatsapp:hover {
-
-    transition: 200ms;
-    bottom: 30px;
 }

@@ -14,7 +14,7 @@ interface Props {
     }[]; 
 }
 
-const Buldings = function({buldings}: Props){
+const Buldings = ({buldings}: Props) => {
 
     return (
         <>

@@ -1,33 +1,33 @@
 import Image from 'next/image';
-import styles from './contact.module.css'
+import { Companies, CreditsSection, Divulgation, FooterNav, LinkFooter, Midias } from './contact.s';
 
 const Credits = function(){
 
     return (
-        <section id='contactUs' className={styles.creditsSection}>
+        <CreditsSection id='contactUs' >
 
-            <Image className={styles.logo} src='/assets/svg/logoD&SS.svg' alt='logo da D&SS' height='66' width='119' />
+            <Image src='/assets/svg/logoD&SS.svg' alt='logo da D&SS' height='66' width='119' />
 
-            <div className={styles.Companies}>
+            <Companies>
 
                 <p>Di France Residence</p>
                 <p>Brizza Serena Residence</p>
                 <p>Residence Infinity Blue</p>
                 <p>Residencial Eunice Costa</p>
-            </div>
-            <div className={styles.footerNav}>
+            </Companies>
+            <FooterNav>
 
-                <a href='/'>Oportunidades</a>
-                <a href='#WhoWeAre'>Quem somos</a>
-                <a href='/'>Nossa região</a>
-                <a href='#contactUs'>Fale conosco</a>
-            </div>
-            <div className={styles.divulgation}>
+                <LinkFooter href='/'>Oportunidades</LinkFooter>
+                <LinkFooter href='#WhoWeAre'>Quem somos</LinkFooter>
+                <LinkFooter href='/'>Nossa região</LinkFooter>
+                <LinkFooter href='#contactUs'>Fale conosco</LinkFooter>
+            </FooterNav>
+            <Divulgation>
 
                 <p>Trabalhe conosco</p>
                 <p>CUB / SC</p>
 
-                <div className={styles.midias}>
+                <Midias>
 
                     <i>
                         <a href='https://www.instagram.com/guilherme_amelco/'><Image src='/assets/svg/iconInstagram.svg' alt='' height='30' width='30' /></a>
@@ -38,9 +38,9 @@ const Credits = function(){
                     <i>
                         <a href='https://www.youtube.com/'><Image src='/assets/svg/iconYoutube.svg' alt='' height='30' width='30' /></a>
                     </i>
-                </div>
-            </div>
-        </section>
+                </Midias>
+            </Divulgation>
+        </CreditsSection>
     )
 }
 
