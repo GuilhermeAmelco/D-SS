@@ -1,6 +1,6 @@
 import Btn from "../Btn";
 import Buldings from "./Buldings";
-import styles from "./enterprises.module.css"
+import { BoxBuildsEnterprises, BoxEnterprises, BtnEnterprises, TitleEnterprises } from "./enterprises.s";
 
 const Enterprises = function() {
 
@@ -32,20 +32,21 @@ const Enterprises = function() {
         length: 161,
         height: 161    
     }]
-    return (
-        <section className={styles.boxEnterprises}>
 
-            <h1>Empreendimentos</h1>
+    return (
+        <BoxEnterprises>
+
+            <TitleEnterprises>Empreendimentos</TitleEnterprises>
             
-            <div id="Enterprises" className={styles.boxBuildsEnterprises}>
+            <BoxBuildsEnterprises id="Enterprises">
                 
                 <Buldings buldings={buldings} />
-            </div>
+            </BoxBuildsEnterprises>
             
-            <div className={styles.btn}>
+            <BtnEnterprises>
                 <Btn text="Conhecer empreendimentos entregues"/>
-            </div>
-        </section>
+            </BtnEnterprises>
+        </BoxEnterprises>
     )
 } 
 

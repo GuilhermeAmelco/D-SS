@@ -1,7 +1,7 @@
 import axios from "axios";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import styles from './aboutus.module.css';
+import { Description, ItemAbout, ItemAboutTitle, ListAboutUs } from "./aboutUs.s";
 
 interface Props {
     items: {
@@ -43,22 +43,22 @@ const AboutUs = function() {
         console.log('data >> ',data);
     }, [data])
     return (
-            <ul className={styles.list}>
+            <ListAboutUs>
                 
                 { data && data.items.map ((data, index) => {
                     
                     return (
-                            <li key={index} className={styles.item}>
+                            <ItemAbout>
 
-                                <h1 className={styles.itemTitle}>
+                                <ItemAboutTitle>
                                     <Image src={images[index].image} alt='' height={50} width={50} />
                                     <p>{data.title}</p>
-                                </h1>
-                                <p className={styles.description}>{data.description}</p>
-                            </li>
+                                </ItemAboutTitle>
+                                <Description>{data.description}</Description>
+                            </ItemAbout>
                     )
                 })}
-            </ul>
+            </ListAboutUs>
     )
 }
 

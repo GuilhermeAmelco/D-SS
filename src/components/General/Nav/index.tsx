@@ -1,33 +1,32 @@
-import Image from "next/image";
-import styles from "./nav.module.css";
+import { Logo, NavGeneral, NavLink, NavList } from "./nav.s";
 
 const Nav = function() {
 
     return (
-        <nav className={styles.nav}>
-            <ul className={styles.navList}>
+        <NavGeneral>
+            <NavList>
 
 
-                <li className={styles.item}>
-                    <a href="#Enterprises" className={styles.link}>Empreendimentos</a>
+                <li>
+                    <NavLink href="#Enterprises">Empreendimentos</NavLink>
                 </li>
 
-                <li className={styles.item}>
-                    <a href="#WhoWeAre" className={styles.link}>Quem somos</a>
+                <li>
+                    <NavLink href="#WhoWeAre" >Quem somos</NavLink>
                 </li>
 
-                <Image className={styles.logo} src='/assets/image/D&SS.png' alt="logo da D&SS" width={130} height={150}/>
+                <Logo src='/assets/image/D&SS.png' alt="logo da D&SS" width={130} height={150}/>
 
 
-                <li className={styles.item}>
-                    <a href="/" className={styles.link}>Sobre Nós</a>
+                <li>
+                    <NavLink href="/" >Sobre Nós</NavLink>
                 </li>
 
-                <li className={styles.item}>
-                    <a href="#contactUs" className={styles.link}>Fale Conosco</a>
+                <li>
+                    <NavLink href="#contactUs" >Fale Conosco</NavLink>
                 </li>
-            </ul>
-        </nav>
+            </NavList>
+        </NavGeneral>
     )
 }
 

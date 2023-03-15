@@ -1,16 +1,16 @@
 import AboutUs from "./AboutUs";
-import styles from './about.module.css'
+import { BoxAbout, BoxAboutTitle } from "./about.s";
 
 const About = function() {
 
 
     return(
 
-        <section className={styles.boxAbout}>
-            <h1 className={styles.boxAboutTitle}>Sobre nós</h1>
+        <BoxAbout>
+            <BoxAboutTitle>Sobre nós</BoxAboutTitle>
 
             <AboutUs />
-        </section>
+        </BoxAbout>
     )
 }
 

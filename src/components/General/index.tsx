@@ -1,18 +1,18 @@
 import Btn from "../Btn";
 import Nav from "./Nav";
-import styles from "./general.module.css"
+import { DESS, H3Main, MainContent } from "./general.s";
 
 const General = function() {
 
     return(
 
-        <section className={styles.dEss}>
+        <DESS>
             <Nav />
-            <main className={styles.mainContent}>
-                <h3>Apenas 50 <br></br> metros da <strong>praia</strong></h3>
+            <MainContent>
+                <H3Main>Apenas 50 <br></br> metros da <strong>praia</strong></H3Main>
                 <Btn text="Saiba mais"/>
-            </main>
-        </section>
+            </MainContent>
+        </DESS>
     )
 }
 

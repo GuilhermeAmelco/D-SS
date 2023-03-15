@@ -5,7 +5,7 @@ interface Props {
 const Btn = function({text}: Props) {
 
     return (
-        <button >{text}</button>
+        <button>{text}</button>
     )
 }
 
