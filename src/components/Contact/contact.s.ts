@@ -13,7 +13,7 @@ export const CreditsSection = styled.section`
         align-items: center;
         font-size: ${theme.font.size.xnormal};    
         min-height: 500px;
-        word-break: break-all;
+        font-weight: 300;
 
         @media (min-width: ${theme.screen.Tablet}) {
 
@@ -75,6 +75,7 @@ const atributeContact = css`
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             margin: ${theme.gap.normal} ${theme.gap.large};
         `};
 `

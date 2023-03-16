@@ -34,5 +34,6 @@ export const BoxAboutTitle = styled.h1`
         justify-self: center;
         font-style: italic;
         font-weight: 400;
+        text-align: center;
     `}
 `

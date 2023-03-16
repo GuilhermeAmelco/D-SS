@@ -6,13 +6,12 @@ export const FooterPrincipal = styled.footer`
 
         display: flex;
         flex-wrap: wrap;
-        word-break: break-all;
         align-items: center;
         justify-content: space-evenly;
         min-height: 88px;
-        font-family: 'Fredoka', sans-serif;
+        font-family: ${theme.font.family.Fredoka};
         background: ${theme.colors.orange};
-        color: white;
+        color: ${theme.colors.textInverted};
         font-size: ${theme.font.size.xnormal};
         padding: 12px;
         text-align: center;
@@ -22,6 +21,7 @@ export const FooterPrincipal = styled.footer`
 export const FooterP = styled.p`
 
     font-weight: 300;
+
 `
 
 export const CreditsPrincipal = styled.div`
@@ -32,5 +32,17 @@ export const CreditsPrincipal = styled.div`
         gap: ${theme.gap.large};
         align-items: center;
         margin: ${theme.gap.large};
+        font-weight: 300;
+    `}
+`
+
+export const Br = styled.br`
+
+    ${({theme}) => css`
+
+        @media (min-width: ${theme.screen.Tablet}) {
+
+            
+        }
     `}
 `

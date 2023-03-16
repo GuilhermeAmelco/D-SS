@@ -32,10 +32,9 @@ export default {
         },
 
         family: {
-
-            Fredoka: 'Fredoka, sans-serif',
-            Montserrat: 'Montserrat, sans-serif',
-            PlayfairDisplay: 'Playfair Display, sans-serif'
+            Fredoka: 'var(--fredoka), sans-serif',
+            Montserrat: 'var(--montserrat), sans-serif',
+            PlayfairDisplay: 'var(--playfair_Display), sans-serif'
         }
     },
     transition: {
